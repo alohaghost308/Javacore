@@ -1,0 +1,38 @@
+package demo;
+import java.lang.Math;
+import java.util.Scanner;
+import java.util.TimeZone;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Calendar;
+import java.util.TimeZone;
+public class Demo {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Nhap so phan tu:");
+		int n = sc.nextInt();
+		int [] arr = new int [n] ;
+		for( int i = 0; i< n ;i++) {
+			System.out.println("arr["+i+"]:");
+				arr[i] = sc.nextInt();
+		}
+		System.out.println("In mang:");
+		for( int i = 0; i< n ;i++) {
+			System.out.print(arr[i]+" ");
+		}
+		
+		System.out.println("\n");
+		System.out.println("Nhap tong can tim:");
+		int s = sc.nextInt();
+		for(int i = 0;i<n;i++) {
+			for(int j = 0;j<i;j++) {
+				if(arr[i] + arr[j] == s) {
+					System.out.println(+arr[i]+","+arr[j]);
+				}
+			}
+			
+		}
+		}	
+}
+	
