@@ -12,12 +12,13 @@ public class Demo {
 		
 		System.out.println("Nhap n:");
 		int n = sc.nextInt();
-		int mau,tu,a;
+		int mau,a;
+		double tu;
 		double sum = 1;
 		System.out.println("Nhap  gia tri x");
 		int x = sc.nextInt();
 		for( int i = 1; i<=n;i++) {
-			tu = (pow(-1,i))*(pow(x,2*i));
+			tu = (Math.pow(-1,i))*(Math.pow(x,2*i));
 			a=2*i;
 			mau = GiaiThua(a);
 			sum = sum + (double)(tu/mau);
@@ -32,12 +33,12 @@ public class Demo {
 			 gt=gt*i;
 		}
 		return gt;
-		
-		
 	}
-	public static int pow(int i, int i2) {
-		// TODO Auto-generated method stub
-		return 0;
-	}	
+		
+	
+	
+
 	}
+
+
 
