@@ -1,0 +1,43 @@
+package demo;
+import java.lang.Math;
+import java.util.Scanner;
+import java.util.TimeZone;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Calendar;
+import java.util.TimeZone;
+public class Demo {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Nhap n:");
+		int n = sc.nextInt();
+		int mau,tu,a;
+		double sum = 1;
+		System.out.println("Nhap  gia tri x");
+		int x = sc.nextInt();
+		for( int i = 1; i<=n;i++) {
+			tu = (pow(-1,i))*(pow(x,2*i));
+			a=2*i;
+			mau = GiaiThua(a);
+			sum = sum + (double)(tu/mau);
+		}
+		System.out.println("tong can tim :"+sum);
+	
+	}
+	
+	public static int GiaiThua(int a) {
+			int gt =1;
+		for(int i = 1;i<=a;i++) {
+			 gt=gt*i;
+		}
+		return gt;
+		
+		
+	}
+	public static int pow(int i, int i2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}	
+	}
+
